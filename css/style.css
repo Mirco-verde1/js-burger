@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.left-container{
+  float: left;
+  width: 50%;
+  height: 600px;
+
+}
+
+.right-container{
+  float: left;
+  width: 50%;
+  height: 600px;
+  background: grey;
+}
+
+.checkbox-point{
+  float: left;
+  width: 50%;
+}
