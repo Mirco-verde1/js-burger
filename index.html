@@ -6,73 +6,110 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="left-container">
 
 
+
+
+
+
+    <div class="left-container clearfix">
+
+
+
+<!-- titolo pagina -->
   <div class="title">
-    <h1>Create your hamburger!</h1>
+    <h1>Create your hamburger</h1>
+     <img src="img/burger-top.png" alt="">
   </div>
 
+<div class="main-container">
+
+
   <!-- input name burger -->
+<div class="nameBurger">
+  <input id="nameburgertext" type="text" name="" value="" placeholder="Name Your Burger">
 
-<input class="nameBurger" type="text" name="" value="" placeholder="Name your burger"><br>
+</div>
 
-
-<h3>Ingredients</h3>
+<h3 id="ingredients">Ingredients</h3>
 <!-- Start checkboxes -->
 
 
 
-<div class="checkbox-point">
+<div class="checkbox-point ">
 
-<img src="" alt=""> <label for="">Cheese</label>
+<div class="check-1">
+
+
+<img src="img/cheese.svg" alt=""> <label for="">Cheese</label>
 <input type="checkbox" name="" value="9"><span>Add</span>  <br>
-<img src="" alt=""> <label for="">Egg</label>
+
+<img src="img/fried-egg.svg" alt=""> <label for="">Egg</label>
 <input type="checkbox" name="" value="7"><span>Add</span><br>
-<img src="" alt=""> <label for="">Mustard</label>
-<input type="checkbox" name="" value="4"><span>Add</span>
+
+<img src="img/mustard.svg" alt=""> <label for="">Mustard</label>
+<input type="checkbox" name="" value="4"><span>Add</span><br>
+
 </div>
 
-<div class="checkbox-point">
+<div class="check-2">
 
-<img src="" alt=""> <label for="">Tomato</label>
+
+
+<img src="img/tomato.svg" alt=""> <label for="">Tomato</label>
 <input type="checkbox" name="" value="6"><span>Add</span>  <br>
-<img src="" alt=""> <label for="">Lattuce</label>
+
+<img src="img/lettuce.svg" alt=""> <label for="">Lattuce</label>
 <input type="checkbox" name="" value="6"><span>Add</span><br>
-<img src="" alt=""> <label for="">Ketchup</label>
+
+<img src="img/ketchup.svg" alt=""> <label for="">Ketchup</label>
 <input type="checkbox" name="" value="4"><span>Add</span>
 </div>
-
+</div>
 <!-- End checkboxes -->
 
 
 
 <!-- discount input text -->
-<div class="">
-  <input class="discount" type="text" name="" value="" placeholder="Discount Coupon">
+<div class="discount-btn">
+  <span>Discount Coupon</span>
+  <input class="discount" type="text" name="" value="" placeholder="158DKET541">
 
 </div>
 
+
+</div>
+<!-- end main container -->
+
 <!-- calculate button -->
+<div class="container-btn">
   <button id='button-submit' type="button" name="button">Calculate</button>
+
+</div>
+
+
+<div class="footer">
+
 
 <!-- total hamburger/discount price -->
 <div class="total">
-  <span>Price</span>
-  <span>$50</span>
+  <span class="footer-left">Your Price</span>
+  <span class="footer-right">$ 50</span>
 </div>
+</div>
+
+
+
 
 </div>
 <!-- end left container -->
 
 
 
-
-
-
-<div class="right-container">
+<div class="right-container clearfix">
 
 </div>
+
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
