@@ -48,19 +48,18 @@ document.getElementById("button-submit").addEventListener("click", function(){
 
  if (counterIngredients < minIngredients) {
     alert('Inserire ' + minIngredients +  ' ingredienti nel panino')
- }else if (nameBurger.value === "") {
+ }else if (nameBurger.value.length === 0) {
    alert('Inserire il nome del tuo Hamburger!')
  }else {
 
-   if (inputDiscount.value !== "") {
+   if (discountPass.indexOf(inputDiscount.value) !== -1) {
      totalCount.innerText = '$ ' + (totalPrice - (totalPrice * discApplied));
 
    }
-    if (inputDiscount.value === "") {
+    if (discountPass.indexOf(inputDiscount.value) === -1) {
       totalCount.innerText = '$ ' + totalPrice;
     }
  }
-
 
 
 });

@@ -62,6 +62,7 @@
   width: 40px;
   vertical-align: middle;
   padding: 3px;
+  margin-bottom: 10px;
 }
 
 .discount-btn{
@@ -76,6 +77,33 @@
   height: 20px;
 }
 
+/* modifica delle checbox */
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+
+.row-check span:before{
+  width: 17px;
+height: 17px;
+background-color:rgb(211,51,99) ;
+display: inline-block;
+content: "";
+position: relative;
+margin-right: 21px;
+bottom: -1px;
+
+}
+
+.row-check input[type=checkbox]:checked + span::before{
+
+display: inline-block;
+z-index: 1;
+content: '\f107';
+ font-family: 'Font Awesome\ 5 Free';
+ font-weight: 900;
+ font-size: 20px;
+}
 
 #nameburgertext{
   border: none;
@@ -88,6 +116,14 @@
 font-size: 25px;
 padding: 30px 0 15px 0;
 }
+
+.fa{
+position: relative;
+left: 34px;
+z-index: 1;
+visibility: hidden;
+}
+
 
 /* contenitore bottone calcuate */
 .container-btn{
